@@ -1,0 +1,18 @@
+composer:
+  last: Hofmann
+  first: Leopold
+title: In læto choro
+genre: motet
+scoring: S, A, T, B (coro), 2 clno (C), timp (C–G), 2 vl, b, org solo
+license: cc-by-sa-4.0
+sources:
+  B1:
+    siglum: A-Wn
+    shelfmark: Mus.Hs.22464
+    rism: 600117560
+    url: https://data.onb.ac.at/rec/AC14273893
+    license: public domain
+    principal: true
+imslp:
+parts:
+  ottoni: Clarino I, II in C\\Timpani in C–G
