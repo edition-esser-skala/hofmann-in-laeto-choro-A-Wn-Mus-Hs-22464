@@ -5,20 +5,20 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "In læto choro"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
       <<
         \new PianoStaff <<
           \set PianoStaff.instrumentName = "Organo"
-          \new Staff { \xxxChords }
-          \new Staff { \xxxOrgano }
+          \new Staff { \InChords }
+          \new Staff { \InOrgano }
         >>
-        \new FiguredBass { \xxxBassFigures }
+        \new FiguredBass { \InBassFigures }
       >>
-      \layout { }
-      \midi { \tempo 4 = 60 }
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+      \midi { \tempo 4 = 65 }
     }
   }
 }

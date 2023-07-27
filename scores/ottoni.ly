@@ -7,7 +7,7 @@
 
 \book {
   \bookpart {
-    \section "1" "First"
+    \section "In læto choro"
     \addTocEntry
     \paper { indent = 2\cm }
     \score {
@@ -17,17 +17,17 @@
             \set GrandStaff.instrumentName = \transposedName "Clarino" "C" ""
             \new Staff {
               \set Staff.instrumentName = "I"
-              \xxxClarinoI
+              \InClarinoI
             }
             \new Staff {
               \set Staff.instrumentName = "II"
-              \xxxClarinoII
+              \InClarinoII
             }
           >>
         >>
         \new Staff {
           \set Staff.instrumentName = \transposedTimp "C" "" "G" ""
-          \xxxTimpani
+          \InTimpani
         }
       >>
     }
