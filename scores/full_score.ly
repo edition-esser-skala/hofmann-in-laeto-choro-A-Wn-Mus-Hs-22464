@@ -6,7 +6,7 @@
 \book {
   \bookpart {
     \section "In læto choro"
-    % \addTocEntry
+    \addTocEntry
     \paper { indent = 3\cm }
     \score { %\articulate
       <<
@@ -38,25 +38,29 @@
             \incipitSoprano
             \new Voice = "Soprano" { \dynamicUp \InSoprano }
           }
-          \new Lyrics \lyricsto Soprano \InSopranoLyrics
+          \new Lyrics \lyricsto Soprano \InSopranoLyricsA
+          \new Lyrics \lyricsto Soprano \InSopranoLyricsB
 
           \new Staff {
             \incipitAlto
             \new Voice = "Alto" { \dynamicUp \InAlto }
           }
-          \new Lyrics \lyricsto Alto \InAltoLyrics
+          \new Lyrics \lyricsto Alto \InAltoLyricsA
+          \new Lyrics \lyricsto Alto \InAltoLyricsB
 
           \new Staff {
             \incipitTenore
             \new Voice = "Tenore" { \dynamicUp \InTenore }
           }
-          \new Lyrics \lyricsto Tenore \InTenoreLyrics
+          \new Lyrics \lyricsto Tenore \InTenoreLyricsA
+          \new Lyrics \lyricsto Tenore \InTenoreLyricsB
 
           \new Staff {
             \set Staff.instrumentName = "Basso"
             \new Voice = "Basso" { \dynamicUp \InBasso }
           }
-          \new Lyrics \lyricsto Basso \InBassoLyrics
+          \new Lyrics \lyricsto Basso \InBassoLyricsA
+          \new Lyrics \lyricsto Basso \InBassoLyricsB
         >>
         \new PianoStaff <<
           \set PianoStaff.instrumentName = \markup \center-column { "Organo" "solo" }
@@ -78,8 +82,8 @@
           }
         }
       >>
-      \layout { }
-      \midi { \tempo 4 = 90 }
+      \layout { \override Score.SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/16) }
+      \midi { \tempo 4 = 65 }
     }
   }
 }
